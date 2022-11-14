@@ -11,6 +11,7 @@ import { useState } from "react";
 
 export default function Home({ navigation }) {
   const [searchInput, setSearchInput] = useState("");
+
   return (
     <View>
       <ImageBackground
@@ -52,8 +53,6 @@ const styles = StyleSheet.create({
     marginTop: 100,
     justifyContent: "center",
     alignContent: "center",
-    // marginLeft: 50,
-    // marginRight: 50,
   },
   searchInput: {
     padding: 5,
