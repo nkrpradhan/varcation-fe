@@ -15,7 +15,7 @@ export default function Home({ navigation }) {
   return (
     <View>
       <ImageBackground
-        source={require("../assets/bg.jpg")}
+        source={require("../../assets/bg.jpg")}
         style={styles.container}
       >
         <View style={styles.searchContainer}>
