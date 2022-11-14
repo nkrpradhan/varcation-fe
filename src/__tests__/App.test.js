@@ -1,8 +1,8 @@
 import { screen, render, debug } from "@testing-library/react-native";
 
 import App from "../../App";
-describe("first", () => {
-  test("should check for app component nav links", async () => {
+describe("App component", () => {
+  test("Check for search test in app component", async () => {
     const component = <App />;
 
     render(component);
