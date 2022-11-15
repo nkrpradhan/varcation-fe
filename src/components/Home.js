@@ -9,6 +9,8 @@ import {
 
 import { useState } from "react";
 
+import CustomMap from "./CustomMap";
+
 export default function Home({ navigation }) {
   const [searchInput, setSearchInput] = useState("");
 
@@ -17,6 +19,7 @@ export default function Home({ navigation }) {
       <ImageBackground
         source={require("../../assets/bg.jpg")}
         style={styles.container}
+        blurRadius={4}
       >
         <View style={styles.searchContainer}>
           <TextInput
@@ -37,6 +40,7 @@ export default function Home({ navigation }) {
             />
           </View>
         </View>
+        <CustomMap />
       </ImageBackground>
     </View>
   );
@@ -45,7 +49,7 @@ export default function Home({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     width: 400,
-    height: 850,
+    height: 720,
   },
   searchContainer: {
     flex: 1,
@@ -73,5 +77,3 @@ const styles = StyleSheet.create({
     width: 100,
   },
 });
-
-//blala
